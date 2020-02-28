@@ -70,29 +70,40 @@ void loop ()
         if (current != byteRead) {
             current = byteRead;
             clearStrip();
-
-
-            switch(byteRead) {
-                drawCross(byteRead-48); //convert parse char to int
-
-                // case '0':
-                //     drawCross(0);
-                // case '1':
-                //     drawCross(1);
-                // case '2':
-                //     drawCross(2);
-                // case '3':
-                //     drawCross(3);
-                // case '4':
-                //     drawCross(4);
-                // case '5':
-                //     drawCross(5);
+            if(byteRead == '2'){
+                drawCross(0*64);
             }
+            else if(byteRead == '1'){
+                drawCross(1*64);
+            }
+            else if(byteRead == '0'){
+                drawCross(2*64);
+            }
+            else if(byteRead == '3'){
+                drawCross(3*64);
+            }
+            else if(byteRead == '4'){
+                drawCross(4*64);
+            }
+            else if(byteRead == '5'){
+                drawCross(5*64);
+            }
+            
 
             showStrip();
         }
         
     }
+    
+    // gradualFill(NUM_LEDS, COLOR_RED);  // green
+    
+    // toggleLED();
+    // gradualFill(NUM_LEDS, COLOR_BLUE);  // blue
+    // toggleLED();
+    // gradualFill(NUM_LEDS, COLOR_GREEN);  // magenta
+    // toggleLED();
+    // gradualFill(NUM_LEDS,COLOR_OFF);  // yellow
+    // toggleLED();
     
 }
 
@@ -109,34 +120,37 @@ void gradualFill(uint32_t n, ColorMap color)
 
 
 void drawCross(int k) {
-    for(int i=0; i<8; i++) {
-        for(int j=0; j<8; j++) {
-            if (i == j || 7-j == i) {
-                // a little different
-                setLEDColor(i*8+j+k*64, COLOR_BLUE);
+    for(uint16_t i=0; i<NUM_LEDS; i++) {
+        for(int i=0; i<8; i++) {
+            for(int j=0; j<8; j++) {
+                if (i == j || 7-j == i) {
+                    // a little different
+                    setLEDColor(i*8+j+k, COLOR_BLUE);
+                }
             }
         }
+
     }
 }
 
 
 void drawCircle(int k) {
-    for(int i=0; i<8; i++) {
-        for(int j=0; j<8; j++) {
-            if ((i == 0 && j >=2 && j <= 5) ||
-                (i == 1 && j == 1) || 
-                (i == 6 && j == 1) ||
-                (i == 1 && j == 6) ||
-                (i == 6  && j == 6) || 
-                (j == 0 && i >= 2 && i <= 5) || 
-                (j == 7 && i >= 2 && i <= 5) || 
-                (i == 7 && j >=2 && j <= 5)) {
-                    setLEDColor(i*8+j+k*64, COLOR_BLUE);
+    for(uint16_t i=0; i<NUM_LEDS; i++) {
+        for(int i=0; i<8; i++) {
+            for(int j=0; j<8; j++) {
+                if ((i == 0 && j >=2 && j <= 5) ||
+                    (i == 1 && j == 1) || 
+                    (i == 6 && j == 1) ||
+                    (i == 1 && j == 6) ||
+                    (i == 6  && j == 6) || 
+                    (j == 0 && i >= 2 && i <= 5) || 
+                    (j == 7 && i >= 2 && i <= 5) || 
+                    (i == 7 && j >=2 && j <= 5)) {
+                        setLEDColor(i*8+j+k, COLOR_BLUE);
+                }
+                
             }
-            
         }
+        
     }
 }
-
-
-

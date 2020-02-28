@@ -49,30 +49,66 @@ while (True):
     for r in objects:
         img.draw_rectangle(r)
 
-        x = r[0]
-        y = r[1]
+        #Horizontal
+        if (r[0] > 110 and 20 < r[1] and r[1] < 60):
+            #middle-right
+            uart.write('5')
+            if (uart.any()):
+                print(uart.read())
 
-        if x < 50:
-            if y < 40:
-                uart.write('0')
-            else:
-                uart.write('3')
-        elif 50 < x and x < 110:
-            if y < 40:
-                uart.write('1')
-            else:
-                uart.write('4')
-        else:
-            if y < 40:
-                uart.write('2')
-            else:
-                uart.write('5')
+        elif (50 < r[0] and r[0] < 110 and 20 < r[1] and r[1] < 60):
+            #middle-middle
+            uart.write('4')
+            if (uart.any()):
+                print(uart.read())
 
+        elif (r[0] < 50 and 20 < r[1] and r[1] < 60):
+            #middle-left
+            uart.write('3')
+            if (uart.any()):
+                print(uart.read())
 
-        if (uart.any()):
-            print(uart.read())
+        # Vertical
+        elif (r[1] > 60 and 50 < r[0] and r[0] < 110):
+            #bottom-middle
+            uart.write('7')
+            if (uart.any()):
+                print(uart.read())
 
-        #print(r[0])
+        elif (r[1] < 20 and 50 < r[0] and r[0] < 110):
+            # top-middle
+            uart.write('1')
+            if (uart.any()):
+                print(uart.read())
+
+        # Corners
+        elif (r[0] < 50 and r[1] > 60):
+            #bottom-left
+            uart.write('6')
+            if (uart.any()):
+                print(uart.read())
+
+        elif (r[0] > 110 and r[1] > 60):
+            #bottom-right
+            uart.write('8')
+            if (uart.any()):
+                print(uart.read())
+
+        elif (r[0] < 50 and r[1] < 20):
+            # top-left
+            uart.write('0')
+            if (uart.any()):
+                print(uart.read())
+
+        elif (r[0] > 110 and r[1] < 20):
+            # top-right
+            uart.write('2')
+            if (uart.any()):
+                print(uart.read())
+
+        print('-------')
+        print(r[0])
+        print(r[1])
 
 # Print FPS.
 # Note: Actual FPS is higher, streaming the FB makes it slower.

@@ -6,7 +6,7 @@
 
 // Configuration - SET THESE!
 #define OUTPUT_PIN  (0x80)  // Set to whatever UCB0SIMO is on your processor (Px.7 here)
-#define NUM_LEDS    (128)    // NUMBER OF LEDS IN YOUR STRIP
+#define NUM_LEDS    (384)    // NUMBER OF LEDS IN YOUR STRIP
 
 
 // Transmit codes
