@@ -49,16 +49,25 @@ while (True):
     for r in objects:
         img.draw_rectangle(r)
 
-        if (r[0] > 120):
-            uart.write('1')
+        x = r[0]
+        y = r[1]
 
-            #print(1)
-        elif (60 < r[0] and r[0] < 120):
-            uart.write('2')
-            #print(2)
-        elif (r[0] < 60):
-            uart.write('3')
-            #print(3)
+        if x < 50:
+            if y < 40:
+                uart.write('0')
+            else:
+                uart.write('3')
+        elif 50 < x and x < 110:
+            if y < 40:
+                uart.write('1')
+            else:
+                uart.write('4')
+        else:
+            if y < 40:
+                uart.write('2')
+            else:
+                uart.write('5')
+
 
         if (uart.any()):
             print(uart.read())
