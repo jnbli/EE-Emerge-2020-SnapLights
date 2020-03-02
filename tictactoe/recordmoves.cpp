@@ -1,7 +1,7 @@
 int current = 0;
 int grid [2, 2, 2,
-        2, 2, 2,
-        2, 2, 2,] // 0 means O, 1 means X, 2 means nothing
+          2, 2, 2,
+          2, 2, 2,] // 0 means O, 1 means X, 2 means nothing
 int player = 0; // 0 means O, 1 means X
 
 
@@ -16,27 +16,25 @@ void loop ()
         
         if (current != byteRead && grid[byteRead] == 2) {
 
-
             current = byteRead;
             clearStrip();
 
-            switch(byteRead) {
-            	case 0
-            	draw(red,player, 0);
-            	case 1:
-            	draw(red,player, 1);
-            	...
+            drawRed(player, bytRead);
+            drawGrid(blue); //Draws whatever is in grid 
+            showStrip();
             }
 
-            drawGrid(blue);
-            showStrip();
-        }
-        if (doubleClap) {
-            doubleClap = 0;
-        	grid[byteRead] = player;
-        	clearStrip()
-        	drawGrid(blue)
-
+        if (doubleClap()) { //returns 1 or 0
+            doubleClap() = 0;
+        	grid[byteRead] = player; //saves player choice in grid array
+        	clearStrip();
+        	drawGrid(blue);
+        	showStrip();
+            if(isWinner()) //returns 1 or 0 for winner
+                Serial.println(player, " Win");
+            player = ~player;
         }
         
     }
+    
+}
