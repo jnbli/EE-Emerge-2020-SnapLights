@@ -43,6 +43,12 @@ Describe the current release and any notes about the current state of the projec
 
 # Getting Started
 
+
+To build the Tic Tac Toe you will need hardware and software. Hardware needed to physically construct the physical include 9 Adafruit neopixels, a TI MSP430, and an OpenMV Camera.
+
+Software will be C++ on Energia for the MSP430 and Python for the OpenMV Camera, as well as Fusion 360 to design the CAD enclosure, and Altimaker Cura to 3D print it.
+
+
 This section should provide instructions for other developers to
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -118,7 +124,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 # Acknowledgments
 
-Big thanks, of course, to our TA Sean Alling and Professor Andre Knoesen, without whom this project and EE-Emerge would not be possible. Also, we give thanks to UC Davis for providing the facility and Texas Instruments for sponsoring and providing the funding for project materials. Honorable mentions include hardware we used such as Adafruit neopixel, TI MSP430, and OpenMV Camera as well as software C++ and Python.
+Big thanks, of course, to our TA Sean Alling and Professor Andre Knoesen, without whom this project and EE-Emerge would not be possible. Also, we give thanks to UC Davis for providing the facility and Texas Instruments for sponsoring and providing the funding for project materials. 
 
 Provide proper credits, shoutouts, and honorable mentions here. Also provide links to relevant repositories, blog posts, or contributors worth mentioning.
 
