@@ -109,9 +109,18 @@ void loop ()
               delay(2000);
               clearStrip();
               fillStrip(COLOR_OFF);
-              draw(1-player, 0, COLOR_GREEN);
+
+              int winner = 1-player;
+
+              draw(winner, 1, COLOR_GREEN);
+              drawW(winner, 3, COLOR_GREEN);
+              drawO(winner, 4, COLOR_GREEN);
+              drawN(winner, 3, COLOR_GREEN);
 //              drawCircle(0, COLOR_GREEN);
               showStrip();
+              while(1) {
+                //maintain this state, until reset is hit
+              }
         }
         
 }
@@ -136,8 +145,6 @@ bool isWinner() {
     return false;
 }
 
-
-
 void drawGrid(ColorMap color) {
     for (int i=0; i<9; i++) {
         if (grid[i] != 2) {
@@ -146,8 +153,6 @@ void drawGrid(ColorMap color) {
     }
 
 }
-
-
 
 
 void draw(int player, int position, ColorMap color) {
@@ -165,8 +170,8 @@ void drawCross(int k, ColorMap color) {
   for(int i=0; i<8; i++) {
     for(int j=0; j<8; j++) {
       if (i == j || 7-j == i) {
-          // a little different
-          setLEDColor(i*8+j+k, color);
+        // a little different
+        setLEDColor(i*8+j+k, color);
       }
     }
   }
@@ -184,8 +189,35 @@ void drawCircle(int k, ColorMap color) {
           (j == 0 && i >= 2 && i <= 5) || 
           (j == 7 && i >= 2 && i <= 5) || 
           (i == 7 && j >=2 && j <= 5)) {
-              setLEDColor(i*8+j+k, color);
+            setLEDColor(i*8+j+k, color);
       } 
+    }
+  }
+}
+
+
+void drawW(int k, ColorMap color) {
+  for(int i=0; i<8; i++) {
+    for(int j=0; j<8; j++) {
+      if (i == 7 || j == 0 || j == 3 || j == 4 || j == 7) {
+        setLEDColor(i*8+j+k, color);
+      }
+    }
+  }
+}
+
+
+void drawO(int k, ColorMap color) {
+  drawCircle(k, color);
+}
+
+
+void drawN(int k, ColorMap color) {
+  for(int i=0; i<8; i++) {
+    for(int j=0; j<8; j++) {
+      if (j == 0 || j == 7 || i == j) {
+        setLEDColor(i*8+j+k, color);
+      }
     }
   }
 }
