@@ -162,39 +162,32 @@ void draw(int player, int position, ColorMap color) {
 
 
 void drawCross(int k, ColorMap color) {
-    for(uint16_t i=0; i<NUM_LEDS; i++) {
-        for(int i=0; i<8; i++) {
-            for(int j=0; j<8; j++) {
-                if (i == j || 7-j == i) {
-                    // a little different
-                    setLEDColor(i*8+j+k, color);
-                }
-            }
-        }
-
+  for(int i=0; i<8; i++) {
+    for(int j=0; j<8; j++) {
+      if (i == j || 7-j == i) {
+          // a little different
+          setLEDColor(i*8+j+k, color);
+      }
     }
+  }
 }
 
 
 void drawCircle(int k, ColorMap color) {
-    for(uint16_t i=0; i<NUM_LEDS; i++) {
-        for(int i=0; i<8; i++) {
-            for(int j=0; j<8; j++) {
-                if ((i == 0 && j >=2 && j <= 5) ||
-                    (i == 1 && j == 1) || 
-                    (i == 6 && j == 1) ||
-                    (i == 1 && j == 6) ||
-                    (i == 6  && j == 6) || 
-                    (j == 0 && i >= 2 && i <= 5) || 
-                    (j == 7 && i >= 2 && i <= 5) || 
-                    (i == 7 && j >=2 && j <= 5)) {
-                        setLEDColor(i*8+j+k, color);
-                }
-                
-            }
-        }
-        
+  for(int i=0; i<8; i++) {
+    for(int j=0; j<8; j++) {
+      if ((i == 0 && j >=2 && j <= 5) ||
+          (i == 1 && j == 1) || 
+          (i == 6 && j == 1) ||
+          (i == 1 && j == 6) ||
+          (i == 6  && j == 6) || 
+          (j == 0 && i >= 2 && i <= 5) || 
+          (j == 7 && i >= 2 && i <= 5) || 
+          (i == 7 && j >=2 && j <= 5)) {
+              setLEDColor(i*8+j+k, color);
+      } 
     }
+  }
 }
 
 
