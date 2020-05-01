@@ -4,7 +4,17 @@ Snaplights is project that uses face recognition and clap detection to play the 
 
 # Getting Started
 
-The early idea was to have a finger snap turn on a set of lights, by Jonathan. In discussions, Aldric convinced the team to pivot the project to be an interactive game.
+The early idea was to have a finger snap turn on a set of lights, by Jonathan. In discussions, Aldric convinced the team to pivot the project to be an interactive game. 
+
+# How does Snaplights work? 
+There is 2 parts to the software for Snaplights. First one, the MSP430G2553 is programmed using the Texas Instruments Code Composer. The code creats a UART connection between the camera and the microntroller. It also process the signal received from the microphone. Secondly, the OpenMV H7 camera is programmed using openmv IDE, the code splits the camera lens screen into 3x3 matrices coordinates. If the face is detected in any of the sections, the corresponding neopixel will turn on to be X for the first player and at the same time if the microphone senses a clap then the displayed X will be locked in the neopixel. If a clap is not sensed then as the person moves their face onto a different section, the corresponding neopixel will turn on, turning off the previous neopixel. After locking the first input, the next player will start playing with O and follow the same process as X. 
+
+
+# Wiring Diagram
+
+This is the wiring configuration of Snaplights. The diagram presents how the wires connects all the part together. DaisyChain is the type of wiring scheme used for the neopixels. 
+
+![Wiring Diagram](https://github.com/jnbli/EE-Emerge-2020-SnapLights/blob/master/documentation/Wiring.jpeg)
 
 # Project Team
 
