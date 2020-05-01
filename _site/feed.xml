@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-01T09:27:40-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">SnapLights</title><subtitle>Tic tac toe with face detection select and clap detection confirm</subtitle><author><name>Your Name</name></author><entry><title type="html">Math Support</title><link href="http://localhost:4000/math-support/" rel="alternate" type="text/html" title="Math Support" /><published>2018-07-16T00:00:00-07:00</published><updated>2018-07-16T00:00:00-07:00</updated><id>http://localhost:4000/math-support</id><content type="html" xml:base="http://localhost:4000/math-support/">&lt;p&gt;You can enable math support through &lt;code class=&quot;highlighter-rouge&quot;&gt;use_math: true&lt;/code&gt; front matter which enable the MathJax.js rendering.&lt;/p&gt;
+
+&lt;p&gt;After enable math support, use &lt;code class=&quot;highlighter-rouge&quot;&gt;$$ ... $$&lt;/code&gt; displaying math equation.&lt;/p&gt;
+
+&lt;div&gt;
+&lt;strong&gt;&lt;em&gt;For inline mode&lt;/em&gt;&lt;/strong&gt;
+&lt;div style=&quot;margin-left:1em;&quot;&gt;
+    type your equation in line with other text
+&lt;/div&gt;
+&lt;strong&gt;&lt;em&gt;For display mode:&lt;/em&gt;&lt;/strong&gt;
+&lt;div style=&quot;margin-left:1em;&quot;&gt;
+    type your equation such that there is a blank line &lt;em&gt;before&lt;/em&gt; your beginning &lt;code&gt;$$&lt;/code&gt; and there is a blank line &lt;em&gt;after&lt;/em&gt; your ending &lt;code&gt;$$&lt;/code&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+As an example, the following &lt;em&gt;code&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The Pythagoras' theorem state that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. The theorem can be written as an equation relating the lengths of the sides $$a$$, $$b$$ and
+$$c$$, often called the &quot;Pythagorean equation&quot;:
+
+$$a^2 + b^2 = c^2$$
+
+where $$c$$ represents the length of the hypotenuse and $$a$$ and $$b$$ the lengths of the triangle's other two sides. `[source: wikipedia]`
+
+This also implies that for any square with side length $$x$$, the length of its diagonal is $$\sqrt{2}x$$.
+
+**_Proof:_**
+Let the length of diagonal be $$d$$. Apply Pythagoras theorem on the right angle triangle that has the diagonal as hypotenuse, and side of square as the other two side, we have:
+
+$$
+\begin{align*}
+x^2 + x^2 &amp;amp;= d^2 \\
+d^2 &amp;amp;= 2x^2 \\
+d &amp;amp;= \sqrt{2}x \tag*{$\blacksquare$}
+\end{align*}
+$$
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;produces&lt;/em&gt;:&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The Pythagoras’ theorem state that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. The theorem can be written as an equation relating the lengths of the sides \(a\), \(b\) and
+\(c\), often called the “Pythagorean equation”:&lt;/p&gt;
+
+\[a^2 + b^2 = c^2\]
+
+&lt;p&gt;where \(c\) represents the length of the hypotenuse and \(a\) and \(b\) the lengths of the triangle’s other two sides. &lt;code class=&quot;highlighter-rouge&quot;&gt;[source: wikipedia]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This also implies that for any square with side length \(x\), the length of its diagonal is \(\sqrt{2}x\).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Proof:&lt;/em&gt;&lt;/strong&gt; Let the length of diagonal be \(d\). Apply Pythagoras theorem on the right angle triangle that has the diagonal as hypotenuse, and side of square as the other two side, we have:&lt;/p&gt;
+
+\[\begin{align*}
+x^2 + x^2 &amp;amp;= d^2 \\
+d^2 &amp;amp;= 2x^2 \\
+d &amp;amp;= \sqrt{2}x \tag*{$\blacksquare$}
+\end{align*}\]
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Reference&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qu%E2%80%8C%E2%80%8Bick-reference&quot;&gt;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qu%E2%80%8C%E2%80%8Bick-reference&lt;/a&gt; (MathJax cheatsheet)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cdn.rawgit.com/mathjax/MathJax/2.7.1/test/sample-eqnum.html&quot;&gt;https://cdn.rawgit.com/mathjax/MathJax/2.7.1/test/sample-eqnum.html&lt;/a&gt; (some MathJax example)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mathjax.org/#demo&quot;&gt;https://www.mathjax.org/#demo&lt;/a&gt; (test your equation at here)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kramdown.gettalong.org/syntax.html#math-blocks&quot;&gt;https://kramdown.gettalong.org/syntax.html#math-blocks&lt;/a&gt; (Kramdown rendering of &lt;code class=&quot;highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt; to math mode)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Your Name</name></author><category term="MathJax" /><summary type="html">You can enable math support through use_math: true front matter which enable the MathJax.js rendering.</summary></entry><entry><title type="html">Sample Post</title><link href="http://localhost:4000/sample/sample-post/" rel="alternate" type="text/html" title="Sample Post" /><published>2018-07-16T00:00:00-07:00</published><updated>2018-07-16T00:00:00-07:00</updated><id>http://localhost:4000/sample/sample-post</id><content type="html" xml:base="http://localhost:4000/sample/sample-post/">&lt;h1 id=&quot;lorem-ipsum&quot;&gt;Lorem Ipsum&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem efficitur, accumsan erat at, molestie dui. Nunc id libero dolor. Duis sed enim interdum, ultrices dolor vitae, varius magna. Nullam tincidunt sit amet velit vitae gravida. Duis porttitor dignissim nulla, eget blandit purus semper vel. Maecenas vehicula nisl ut turpis aliquam tempor. Sed sollicitudin volutpat massa, vel volutpat dolor imperdiet sit amet. Aenean non justo a ex auctor viverra.&lt;/p&gt;
+
+&lt;p&gt;Sed egestas diam ut bibendum pellentesque. Phasellus porta suscipit ex eget consectetur. Duis felis justo, lacinia ut urna sit amet, maximus pellentesque diam. Curabitur vestibulum vehicula diam, nec lacinia tortor dictum id. Curabitur blandit leo vel mollis vestibulum. Integer finibus eleifend sodales. Proin pretium id quam at vehicula. Phasellus rhoncus elit et interdum mollis. Quisque mollis, justo ultrices scelerisque elementum, erat felis rhoncus erat, eu fringilla neque sapien sed ante. Mauris consequat lorem id felis consectetur finibus. Curabitur scelerisque interdum pretium. Donec viverra tincidunt tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc aliquam vitae sapien sed aliquam. Mauris feugiat odio eu ligula consectetur, vel condimentum felis commodo.&lt;/p&gt;
+
+&lt;p&gt;Mauris vitae volutpat tellus. Nunc nec dolor eget lorem venenatis dapibus lobortis sit amet diam. In id orci nulla. Donec rhoncus erat eu vestibulum suscipit. Fusce eu urna vel magna eleifend varius ut et nisi. Phasellus in est lectus. Nam ullamcorper tortor nec sem cursus, sit amet convallis sapien elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla luctus felis in mauris tincidunt, varius ullamcorper ante tempus. In sit amet ex et libero convallis gravida sit amet eget mauris. Proin urna lacus, vulputate maximus libero non, tincidunt tempus urna.&lt;/p&gt;
+
+&lt;p&gt;Duis ante eros, volutpat luctus nibh non, dictum vehicula justo. Nulla vehicula tempor sem sed vestibulum. Vestibulum fringilla efficitur felis eu luctus. Curabitur ac urna lobortis, feugiat erat eget, commodo risus. Praesent in erat commodo, tristique urna at, iaculis purus. Cras tortor mauris, luctus in fermentum sit amet, tempus vel diam. Ut egestas venenatis justo at condimentum. Quisque vestibulum eget neque quis facilisis. Ut iaculis at nunc non volutpat. Praesent sed maximus ipsum. Etiam finibus nunc nunc, sit amet venenatis nisi accumsan eget. Fusce sed mattis mi, ut pellentesque justo.&lt;/p&gt;
+
+&lt;p&gt;Aenean pharetra tellus non velit egestas, ac consectetur dolor dapibus. Cras gravida, leo id porta efficitur, lorem lorem condimentum nunc, vitae scelerisque ante erat quis urna. Suspendisse mattis laoreet quam quis interdum. In a mi est. Aenean suscipit viverra enim vel viverra. Quisque eu ligula ac ipsum tristique volutpat ac et sem. Nullam tristique est blandit, iaculis metus ut, fermentum mi. Ut ac tristique orci. Cras ac dapibus enim. Pellentesque eu dictum lacus, eget tincidunt nisi.&lt;/p&gt;</content><author><name>Your Name</name></author><summary type="html">Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem efficitur, accumsan erat at, molestie dui. Nunc id libero dolor. Duis sed enim interdum, ultrices dolor vitae, varius magna. Nullam tincidunt sit amet velit vitae gravida. Duis porttitor dignissim nulla, eget blandit purus semper vel. Maecenas vehicula nisl ut turpis aliquam tempor. Sed sollicitudin volutpat massa, vel volutpat dolor imperdiet sit amet. Aenean non justo a ex auctor viverra.</summary></entry><entry><title type="html">Welcome to Minimal Mistakes Jekyll</title><link href="http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/" rel="alternate" type="text/html" title="Welcome to Minimal Mistakes Jekyll" /><published>2017-12-21T00:00:00-08:00</published><updated>2017-12-21T00:00:00-08:00</updated><id>http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll</id><content type="html" xml:base="http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/">&lt;p&gt;Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of this blog post to be your own OR delete this post and create a new one.&lt;/p&gt;
+
+&lt;h3 id=&quot;things-to-take-note-when-creating-a-blog-posts&quot;&gt;Things to take note when creating a blog posts&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Categories and tags are optionals&lt;/li&gt;
+  &lt;li&gt;All posts should follow the naming convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.md&lt;/code&gt;, look at the name of this file to get the idea&lt;/li&gt;
+  &lt;li&gt;It is recommended that the &lt;code class=&quot;highlighter-rouge&quot;&gt;name-of-post&lt;/code&gt; in the file name to be all lower case&lt;/li&gt;
+  &lt;li&gt;Check this &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt; out to write your blog posts in markdown&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Your Name</name></author><category term="jekyll" /><summary type="html">Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of this blog post to be your own OR delete this post and create a new one.</summary></entry></feed>
