@@ -3,10 +3,11 @@ permalink: /project/
 title: "Story"
 layout: single
 ---
+{{ site.baseurl }}
 
 What if you could turn on lights just by snapping of your fingers? Or make it a game fun game of Tic-Tac-Toe?
 
-![](/assets/img/front_view.jpg)
+![]({{site.baseurl}}/assets/img/front_view.jpg)
 
 If so, how would you design it? How many lights do you want? What would the grid look like?
 
