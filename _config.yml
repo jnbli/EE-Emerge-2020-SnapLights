@@ -93,10 +93,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : #"Jonathan Li"
+  avatar           : /assets/img/snaplights.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : #"Fun with face detection. Snaplights group teammates and I are building a Tic Tac Toe Game, in which you select the position with your face."
+  location         : "Davis, CA"
   email            :
   links:
     - label: "Email"
