@@ -134,6 +134,12 @@ To install:
 
 For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
+To preview website on localhost, use the following command.
+
+```bash
+jekyll serve --watch --baseurl ""
+```
+
 ---
 
 ## Contributing
