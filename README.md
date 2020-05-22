@@ -1,6 +1,6 @@
 # SnapLights
 
-Snaplights is project that uses face recognition and clap detection to play the game of tic-tac-toe. It is a two-player game. In this project, 9 [Adafruit Neopixel LEDs](https://www.adafruit.com/product/1487) are arranged in 3-by-3 patterns in a wooden frame with a camera and a microphone attached to the frame. The [Open MV H7](https://openmv.io/products/openmv-cam-h7) camera is used for the face recognition. [KY-037 Microphone sensor](http://sensorkit.en.joy-it.net/index.php?title=KY-037_Microphone_sensor_module_(high_sensitivity)) for the clap detection, and the neopixels to display the output. Players choose their spot with their face and double clap to confirm. The first to claim three spots in a row wins!
+Snaplights is project that uses face recognition and clap detection to play the game of tic-tac-toe. It is a two-player game. In this project, 9 [Adafruit Neopixel LEDs](https://www.adafruit.com/product/1487) are arranged in 3-by-3 patterns in a wooden frame with a camera and a microphone attached to the frame. The [Open MV H7](https://openmv.io/products/openmv-cam-h7) camera is used for the face recognition, [KY-037 Microphone sensor](http://sensorkit.en.joy-it.net/index.php?title=KY-037_Microphone_sensor_module_(high_sensitivity)) for the clap detection, and the neopixels to display the output. Players choose their spot with their face and double clap to confirm. The first to claim three spots in a row wins!
 
 # Getting Started
 
