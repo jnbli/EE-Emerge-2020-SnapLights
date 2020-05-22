@@ -28,7 +28,7 @@ This is the wiring configuration of Snaplights. The diagram presents how the wir
 **[Back to top](#table-of-contents)**
 
 # Acknowledgments
-Thank you to Justin Wong and Raunaq Chopra for helping in the Fall and to Aakansha Bhatt for helping in Winter. A big thank you to TA Sean Alling, who guided us and helped us with important aspects of the project. And a big thank you to Professor Knossen for the help and guidence.
+Thank you to Justin Wong and Raunaq Chopra for helping in the Fall and to Aakansha Bhatt for helping in Winter. A big thank you to TA Sean Alling, who guided us and helped us with important aspects of the project. And a big thank you to Professor Knoesen for the help and guidance.
 
 Also we would like to thank Texas Instruments for sponsoring us and UC Davis for providing us the facility to build our project.
 
